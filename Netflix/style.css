@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cedarville+Cursive&family=Gabarito:wght@400;600;700&family=Poppins:wght@100;200;300;400;500&family=Quicksand:wght@600&family=Raleway:wght@300;500&family=Roboto:wght@300;400;500;900&family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(how-can-someone-make-this-background-with-html-and-css-i-v0-zjgs096khv591.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(165deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 45%, rgba(0,0,0,0.9164915966386554) 100%);
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-block: 1.9rem 1.5rem ;
+    color: white;
+}
+.logo{
+    width: 150px;
+}
+.logo img{
+    width: 100%;
+}
+/* .login{
+    display: flex;
+} */
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.login a{
+    padding: 7px 14px;
+    background-color: red;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+.hero{
+    width: 100%;
+    /* max-width: 900px; */
+    height: 80vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.hero h1{
+    font-size: 2.9rem;
+    font-weight: 800;
+}
+.hero .top{
+    font-size: 1.45rem;
+    margin-block: 1rem;
+    font-weight: 400;
+}
+.hero .bottom{
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+}
+.mail{
+    margin-block: 1rem;
+    width: 90%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0.4rem;
+}
+.mail input{
+    padding: 0.7rem 1rem;
+    min-width: 30%;
+    font-size: 1rem;
+    font-weight: 00;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+input::placeholder{
+    color: rgb(206, 201, 201);
+}
+.mail button{
+    background-color: red;
+    min-width: 18%;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mail button a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-inline: 0.3rem;
+}
+.mail button a i{
+    font-size: 1.3rem;
+    margin-left: 7px;
+}
+.content{
+    width: 100%;
+    background-color: black;
+}
+.line{
+    width: 100%;
+    height: 7px;
+    background-color: rgb(51, 50, 50);
+}
+.immg{
+    width: 50%;
+}
+.box1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80vh;
+    color: white;
+    overflow: hidden;
+}
+.box1 .info{
+    width: 60%;
+}
+.box1 h1{
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.box1 p{
+    font-size: 1.2rem;
+}
+.box1 .immg img{
+    width: 100%;
+}
+
+.questions{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    padding-block: 3rem;
+    text-align: center;
+    color: white;
+}
+.questions h1{
+    font-size: 2.6rem;
+    padding-bottom: 2rem;
+}
+.ques{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.q{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.prb{
+    padding: 1.2rem 1.3rem;
+    background-color: rgb(54, 53, 53);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.prb i{
+    font-size: 1.6rem;
+}
+.prb p{
+    font-size: 1.3rem;
+}
+.sol{
+    background-color: rgb(45, 44, 44); 
+    overflow: hidden;
+    transition: all 0.5s ease;  
+    max-height: 0;
+    text-align: left;
+}
+.sol p{
+    font-size: 1.4rem;
+    padding: 1.2rem 1.4rem;
+}
+.active{
+    max-height: 800px;
+ }
+.qbottom{
+    width: 90%;
+    max-width: 600px;
+    margin-top: 1.8rem;
+}
+footer{
+    background-color: black;
+    color: rgb(203, 202, 202);
+    padding-block: 3rem;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-block: 1rem;
+}
+.sub{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    width: 300px;
+}
+.sub a{
+    color: rgb(203, 202, 202);
+    font-size: 0.9rem;
+    padding-block: 0.5rem;
+}
+/* Custom select Box */
+.select {
+    position: relative;
+    display: inline-block;
+    width: 115px;
+    border: 1px solid rgb(166, 166, 166);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 4px 0px 8px;
+    background-color: black;
+
+}    .select select {
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        padding: 8px 12px;
+        outline: 0;
+        border: 0px solid #b3b2b2;
+        border-radius: 4px;
+        background: transparent;
+        color: white;
+        appearance: none;
+        font-size: 0.8rem;
+        font-weight: 400;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+.select_arrow {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 5px 5px 0px 5px;
+    border-color: white transparent transparent transparent;
+}
+.select:hover{
+    border: 2px solid white;
+}
+footer .select{
+    margin-bottom: 1.3rem;
+}
+footer p a{
+    color: rgb(203, 202, 202);
+}
+@media (max-width:960px){
+    .logo{
+        width: 100px;
+    }
+    .hero h1{
+        font-size: 2rem;
+    }
+    .box1{
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        min-height: 60vh;
+        padding-block: 2rem;
+    }
+    .immg{
+        width: 100%;
+    }
+    .box1 .info{
+        width: 100%;
+        text-align: center;
+    }
+    .box1 h1{
+        font-size: 1.8rem;
+    }
+    .box1 p{
+        font-size: 1rem;
+    }
+    .rev{
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width:750px){
+    .hero .bottom{
+        font-size: 1rem;
+    }
+    .hero .top{
+        font-size: 1.25rem;
+    }
+    .sub{
+        width: 170px;
+    }
+}
+@media (max-width:580px){
+    .mail{
+        flex-direction: column;
+        align-items: center;
+        gap: 0.9rem;
+    }
+    .mail input{
+        width: 90%;
+    }
+    .mail button{
+        padding: 0.5rem 1rem;
+        min-width: 20%;
+    }
+    .questions h1{
+        font-size: 2rem;
+    }
+    .prb p{
+        font-size: 1.1rem;
+    }
+    .sol p{
+        font-size: 1.05rem;
+    }
+    
+    .select select{
+        width: 0;
+    }
+    .select{
+        width: 70px;
+    }
+    .select_arrow{
+        top: 14px;
+    }
+    footer .select select{
+        width: 100%;
+    }
+    footer .select{
+        width: 130px;
+    }
+}
